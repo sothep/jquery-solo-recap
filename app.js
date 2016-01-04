@@ -14,8 +14,8 @@ function getData(){
 
             pString = "<p id='" + person.id + "'>Name: " + person.first_name + " " + person.last_name;
             pString += "<br>Gender: " + person.gender;
-            if (person.hasOwnProperty('email')) pString += "<br>Email: " + person.email + "</p>";
-
+            if (person.hasOwnProperty('email')) pString += "<br>Email: " + person.email;
+            pString += "</p>";
             $('.content').append(pString);
         }
     });
